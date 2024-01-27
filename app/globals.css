@@ -1,0 +1,260 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border font-poppins
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-notosans
+  }
+}
+
+@layer utilities {
+  .btn_white {
+    @apply border-white bg-white px-8 py-3 text-green-50
+  }
+
+  .btn_white_text {
+    @apply border-white bg-white px-8 py-3 text-gray-90
+  }
+
+  .btn_green {
+    @apply border-green-50 bg-green-50 px-8 py-5 text-white
+  }
+
+  .btn_dark_green {
+    @apply bg-green-90 px-8 py-4 text-white transition-all hover:bg-black
+  }
+
+  .btn_dark_green_outline {
+    @apply border-gray-20 bg-green-90 px-8 py-5 text-white
+  }
+
+  .max-container {
+    @apply mx-auto max-w-[1440px];
+  }
+
+  .padding-container {
+    @apply px-6 lg:px-20 3xl:px-0;
+  }
+
+  .padleft-container {
+    @apply pl-6 lg:pl-20 3xl:pl-0;
+  }
+
+  .padright-container {
+    @apply pr-6 lg:pr-20 3xl:pr-0;
+  }
+
+  .flexCenter {
+    @apply flex items-center justify-center;
+  }
+
+  .flexBetween {
+    @apply flex items-center justify-between;
+  }
+
+  .flexStart {
+    @apply flex items-center justify-start;
+  }
+
+  .flexEnd {
+    @apply flex items-center justify-end;
+  }
+
+  /* FONTS */
+  .regular-64 {
+    @apply text-[64px] font-light leading-[120%];
+  }
+
+  .regular-40 {
+    @apply text-[40px] font-light leading-[120%];
+  }
+
+  .regular-32 {
+    @apply text-[32px] font-light;
+  }
+
+  .regular-24 {
+    @apply text-[24px] font-light;
+  }
+
+  .regular-20 {
+    @apply text-[20px] font-light;
+  }
+
+  .regular-18 {
+    @apply text-[18px] font-light;
+  }
+
+  .regular-16 {
+    @apply text-[16px] font-light;
+  }
+
+  .regular-14 {
+    @apply text-[14px] font-light;
+  }
+
+  .regular-12 {
+    @apply text-[12px] font-light;
+  }
+
+  .medium-14 {
+    @apply text-[14px] font-[600];
+  }
+
+  .medium-12 {
+    @apply text-[12px] font-[600];
+  }
+
+  .bold-80 {
+    @apply text-[80px] font-[700] leading-[100%];
+  }
+
+  .bold-88 {
+    @apply text-[88px] font-[700] leading-[120%];
+  }
+
+  .bold-64 {
+    @apply text-[64px] font-[700] leading-[120%];
+  }
+
+  .bold-52 {
+    @apply text-[52px] font-[700] leading-[120%];
+  }
+
+  .bold-40 {
+    @apply text-[40px] font-[700] leading-[120%];
+  }
+
+  .bold-32 {
+    @apply text-[32px] font-[700] leading-[120%];
+  }
+
+  .bold-20 {
+    @apply text-[20px] font-[700];
+  }
+
+  .bold-18 {
+    @apply text-[18px] font-[700];
+  }
+
+  .bold-16 {
+    @apply text-[16px] font-[700];
+  }
+
+  .bold-14 {
+    @apply text-[14px] font-[700];
+  }
+
+  .product-quote {
+    @apply absolute -right-6 bottom-4 w-[140px] lg:bottom-10 xl:-right-8 xl:w-[186px] 3xl:right-0 scale-x-flip opacity-[15%];
+  }
+}
+
+@layer components {
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  .flip-horizontal {
+    --transform-scale-x: '-1';
+  }
+
+  /* Flip on the Y axis */
+  .flip-vertical {
+    --transform-scale-y: '-1';
+  }
+}
