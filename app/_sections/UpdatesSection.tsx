@@ -2,7 +2,8 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { UPDATES } from '@/constants';
-import { ArrowLeftIcon, ArrowRightIcon, VerifiedIcon } from 'lucide-react';
+import { ArrowLeftIcon, ArrowRightIcon } from 'lucide-react';
+import Image from 'next/image';
 
 const UpdatesSection = () => {
   return (
@@ -21,14 +22,14 @@ const UpdatesSection = () => {
             }}
             className="w-full flex flex-col gap-3"
           >
-            <CarouselContent>
+            <CarouselContent className="py-12">
               {UPDATES.map((_, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-4 hover:drop-shadow-lg">
-                    <Card>
+                  <div className="p-4 hover:scale-110 hover:drop-shadow-xl duration-300 transition-all">
+                    <Card className="border-0">
                       <CardContent className="flex flex-col space-y-6 aspect-square items-center justify-center p-6 ">
                         <div className="h-12 w-12 rounded-full bg-violet-700 flex justify-center items-center text-whiten">
-                          <VerifiedIcon className="text-white" />
+                          <Image src={'/icons/verified.svg'} width={28} height={28} alt="" />
                         </div>
                         <h5 className="text-2xl font-notosans font-semibold text-center leading-tight tracking-tight">{`Russia-Ukraine Conflict`}</h5>
                         <p className="regular-16 text-tertiary-text text-center tracking-normal leading-tight">{`Insights and resources to help you navigate the Russia-Ukraine crisis and also increase your awareness of how important it is to get yourself insured.`} </p>
