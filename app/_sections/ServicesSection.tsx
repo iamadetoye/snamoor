@@ -7,7 +7,7 @@ import Link from 'next/link';
 const ServicesSection = () => {
   return (
     <section className="py-12" id="services">
-      <div className="max-container padding-container flex items-center space-x-12">
+      <div className="max-container padding-container flex flex-col md:flex-row space-y-12 items-center space-x-12">
         <div className="w-full max-w-3xl md:w-2/5 mx-amuto flex flex-col items-center md:items-start space-y-4">
           <p className="text-secondary-text text-[16px] font-notosans font-medium">Our Services</p>
           <h2 className="bold-40 text-center md:text-start tracking-wider">Services We Provide for You</h2>
