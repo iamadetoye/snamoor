@@ -13,7 +13,7 @@ export const FEATUREDUSERSIMAGES = [
   '/images/avatar-3.jpg',
 ]
 
-export const PARTNERS = ['/partners/partner-01.svg', '/partners/partner-02.svg', '/partners/partner-03.svg', '/partners/partner-04.svg', '/partners/partner-05.svg'];
+export const PARTNERS = ['/partners/partner-02.svg', '/partners/partner-03.svg', '/partners/partner-04.svg', '/partners/partner-05.svg', '/partners/partner-01.svg'];
 
 export const UPDATES = [
   {
