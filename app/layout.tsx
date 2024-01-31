@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     creator: '@iamadetoye',
     creatorId: '1238454587507576832',
     description: siteConfig.description,
-    images: ['https://images.test.biznezgrowth.co/web-dev-2.jpg', 'https://images.test.biznezgrowth.co/web-dev.jpg', 'https://images.test.biznezgrowth.co/01.jpg', 'https://images.test.biznezgrowth.co/02.jpeg', 'https://images.test.biznezgrowth.co/03.png'],
+    images: ['https://images.test.biznezgrowth.co/aamustapha/snamoor-twitter.jpg', 'https://images.test.biznezgrowth.co/web-dev-2.jpg', 'https://images.test.biznezgrowth.co/web-dev.jpg', 'https://images.test.biznezgrowth.co/01.jpg', 'https://images.test.biznezgrowth.co/02.jpeg', 'https://images.test.biznezgrowth.co/03.png'],
   },
 
   icons: [
