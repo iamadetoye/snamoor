@@ -9,7 +9,7 @@ const AboutUsSection = () => {
         <div className="w-full lg:w-2/5 flex flex-col items-center lg:items-start space-y-4">
           <p className="text-secondary-text text-[16px] font-notosans font-medium">About us</p>
           <h2 className="bold-32 lg:bold-40 sm:max-w-[80%] text-center lg:text-start">Snamoor Brokers Make Your Family Happy</h2>
-          <p className="text-sm md:regular-16 sm:max-w-[80%] text-tertiary-text text-center lg:text-start max-w-xl">Lorem Ipsum but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum but also the leap into electronictype setting, remaining essentially unchanged.</p>
+          <p className="text-sm md:regular-16 sm:max-w-[80%] text-secondary-text text-center lg:text-start max-w-xl">Lorem Ipsum but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum but also the leap into electronictype setting, remaining essentially unchanged.</p>
           <div className="">
             <Button className="px-8 py-6 mt-8 rounded-xl bg-brand hover:bg-brand-dark font-notosans capitalize font-bold duration-300 transition-all" asChild>
               <Link href={'#'}>Learn more</Link>

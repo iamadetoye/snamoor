@@ -6,28 +6,30 @@ import { siteConfig } from '@/config/site';
 import localFont from 'next/font/local';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://snamoor.biznezgrowth.co/'),
   title: {
     default: siteConfig.name,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  twitter: {
+    title: {
+      default: siteConfig.name,
+      template: `%s | ${siteConfig.name}`,
+    },
+    card: 'summary_large_image',
+    creator: '@iamadetoye',
+    creatorId: '1238454587507576832',
+    description: siteConfig.description,
+    images: ['https://images.test.biznezgrowth.co/web-dev-2.jpg', 'https://images.test.biznezgrowth.co/web-dev.jpg', 'https://images.test.biznezgrowth.co/01.jpg', 'https://images.test.biznezgrowth.co/02.jpeg', 'https://images.test.biznezgrowth.co/03.png'],
+  },
+
   icons: [
     {
       url: '/images/snamoor.jpg',
       href: '/images/snamoor.jpg',
     },
   ],
-  // openGraph: {
-  //   type: 'website',
-  //   url: 'snamoor.com.ng',
-  //   title: siteConfig.name,
-  //   description: siteConfig.description,
-  //   siteName: 'Snamoor Landing Page',
-  //   countryName: 'NIGERIA',
-  //   emails: ['support@snamoor.com.ng'],
-  //   locale: 'NG',
-  //   images: [{ url: 'cdn.snamoor.com.ng/videos/intro' }, { url: 'cdn.snamoor.com.ng/videos/welcome' }, { url: 'cdn.snamoor.com.ng/videos/info' }, { url: 'cdn.snamoor.com.ng/videos/services' }],
-  // },
 };
 
 const Poppins = localFont({

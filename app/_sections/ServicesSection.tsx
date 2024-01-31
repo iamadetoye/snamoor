@@ -27,7 +27,7 @@ const ServicesSection = () => {
               <h5 className="font-poppins text-[18px] lg:text-[24px] font-semibold">{service.title}</h5>
               <p className="text-secondary-text text-sm lg:regular-16">{service.desc}</p>
 
-              <Button asChild variant={'ghost'} className="self-start p-1 hover:bg-transparent transition-all duration-300">
+              <Button aria-label="Choose plan" asChild variant={'ghost'} className="self-start p-1 hover:bg-transparent transition-all duration-300">
                 <Link href={service.link} className="flex items-center text-brand hover:text-brand-dark group">
                   <p className="font-semibold text-sm lg:text-[16px]">Choose plan</p>
                   <MoveRightIcon className="ml-2 group-hover:ml-4 transition-all duration-300" />

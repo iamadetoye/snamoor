@@ -181,6 +181,10 @@
     @apply text-[12px] font-light;
   }
 
+  .medium-16 {
+    @apply text-[16px] font-[600];
+  }
+
   .medium-14 {
     @apply text-[14px] font-[600];
   }
